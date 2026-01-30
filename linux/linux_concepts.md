@@ -22,3 +22,7 @@
 1. u - owner
 2. g - groups
 3. o - others
+
+## nano
+- if editing a critical or important file, copy it first for backup
+- use sudo to modify system files
