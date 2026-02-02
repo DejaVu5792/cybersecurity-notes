@@ -15,3 +15,6 @@
    - doors where data go in and out in the IP address (device)
    - ports disappear when the service stops
    - open port = risk, so close unused ports
+## DNS
+- **Domain Name System**
+- translates human-readable domains into IP addresses so devices know where to connect on the internet
