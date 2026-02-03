@@ -27,6 +27,7 @@
 2. DNS Amplification - attackers flood victims with DNS responses from a falsified IP address
 3. DNS Phishing - fake and look-a-like domain names
 4. Domain Generation Algorithm - malware randomly generate domains
+5. Fast Flux - one domain name that rotates around multiple IP addresses
 #### Threat detection
 - long and random-looking domain names
 - NXDOMAIN at a fixed interval
