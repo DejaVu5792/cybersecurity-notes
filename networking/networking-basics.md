@@ -46,4 +46,7 @@
    - **Encryption** - translates data into ciphertext
 - ensures data confidentiality and integrity
 - Protocols: TLS and SSL
-- **Limitation:** It doesn't prevent any incidents happened on the sender and receiver
+- **Limitations:**
+   - It doesn't prevent any incidents happened on the sender and receiver
+   - SSL stripping - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
+      - **Prevention: HSTS** - only accepts HTTPS connections
