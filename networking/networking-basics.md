@@ -54,4 +54,4 @@
 1. **DNS lookup** - translates the domain name into an IP address
 2. **TCP three-way handshake** - establish reliable and ordered connection between the user and the server
 3. **TLS handshake** - verify a server's identity and build a secure tunnel
-4. **HTTP request** - request HTML, CSS, and JavScript
+4. **HTTP request** - request HTML, CSS, and JavaScript
