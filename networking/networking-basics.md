@@ -50,3 +50,8 @@
    - It doesn't prevent any incidents happened on the sender and receiver
    - SSL stripping - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
       - **Prevention: HSTS** - only accepts HTTPS connections
+## Opening a secure website
+1. **DNS lookup** - translates the domain name into an IP address
+2. **TCP three-way handshake** - establish reliable and ordered connection between the user and the server
+3. **TLS handshake** - verify a server's identity and build a secure tunnel
+4. **HTTP request** - request HTML, CSS, and JavScript
