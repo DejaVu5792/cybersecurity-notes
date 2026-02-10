@@ -49,11 +49,12 @@
 - Protocols: TLS and SSL
 - **Limitations:**
    - It doesn't prevent any compromises happened on the sender and receiver
-   - SSL stripping - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
-      - **Prevention: HSTS** - only accepts HTTPS connections
+   - **SSL stripping** - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
+      - browsers might still initially connect on a website via HTTP
+      - **Prevention: HSTS** - only accepts HTTPS connections, even if you manually type http
 ## Opening a secure website
 1. **DNS lookup** - translates the domain name into an IP address
-2. **TCP three-way handshake** - establish reliable and ordered connection between the user and the server
+2. **TCP three-way handshake** - establish reliable and ordered connection between the client and the server
 3. **TLS handshake** - verify a server's identity, protect data in-transit, and build a secure tunnel
    - check **CA (Certificate Authority)** certificate and domain name
 4. **HTTP request** - request HTML, CSS, and JavaScript
