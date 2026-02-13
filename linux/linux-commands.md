@@ -6,6 +6,9 @@
 - ls - show files/folders in the current working directory
   - ls -ld - show directory detailed information
   - ls -lR - show the metadata of a directory's contents and subdirectories
+  - ls -a - show hidden files
+  - ls -lh - show human-readable file list
+  - ls -lt - sort by time
 - echo - print what you type
 - whoami - show the current user's account
 - cd - move across directories/folders
