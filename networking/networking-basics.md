@@ -1,6 +1,6 @@
 # Networking Concepts
 ## IP Address
-   - **Internet Protocol**
+   - **Internet Protocol** Address
    - A changing identifier of a device assigned by a network it is connected on
    - **Analogy**: Address of a specific house (device) in a town (internet)
      ### Types:
@@ -11,6 +11,17 @@
      2. **IPv6**
         - Very huge address space
         - uses 128-bit addresses
+   ### Private IP Address Ranges
+   - 10.0.0.0 - 10.255.255.255
+   - 172.16.0.0 - 172.31.255.255
+   - 192.168.0.0 - 192.168.255.255
+   ### DHCP
+   - **Dynamic Host Configuration Protocol**
+   - automatically assign IP addresses to devices
+   ### APIPA
+   - **Automatic Private IP Addressing**
+   - **Ranges: ** 169.254.0.0 - 169.254.255.255
+   - automatically assigns IP address to devices when DHCP fails
 ## Ports
    - doors where data go in and out in the IP address (device)
    - ports disappear when the service stops
