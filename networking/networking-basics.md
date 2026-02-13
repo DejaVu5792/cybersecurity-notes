@@ -17,7 +17,7 @@
    - 192.168.0.0 - 192.168.255.255
    ### DHCP
    - **Dynamic Host Configuration Protocol**
-   - automatically assign IP addresses to devices
+   - automatically assign IP address to devices
    ### APIPA
    - **Automatic Private IP Addressing**
    - **Ranges: ** 169.254.0.0 - 169.254.255.255
