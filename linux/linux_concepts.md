@@ -22,6 +22,7 @@
 1. u - owner
 2. g - groups
 3. o - others
+4. a - everyone
 
 ## nano
 - if editing a critical or important file, copy it first for backup
