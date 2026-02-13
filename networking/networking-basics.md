@@ -8,13 +8,15 @@
         - ~4.3 billion addresses
         - uses 32-bit address
         - 4 octets
+        - Network Address: 0 fourth octet
+        - Broadcast Address: 255 fourth octet
+         #### Private IPv4 Address Ranges
+         - 10.0.0.0 - 10.255.255.255
+         - 172.16.0.0 - 172.31.255.255
+         - 192.168.0.0 - 192.168.255.255
      2. **IPv6**
         - Very huge address space
-        - uses 128-bit addresses
-   ### Private IP Address Ranges
-   - 10.0.0.0 - 10.255.255.255
-   - 172.16.0.0 - 172.31.255.255
-   - 192.168.0.0 - 192.168.255.255
+        - uses 128-bit addresses      
    ### DHCP
    - **Dynamic Host Configuration Protocol**
    - automatically assign IP address to devices
