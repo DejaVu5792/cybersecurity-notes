@@ -8,8 +8,6 @@
         - ~4.3 billion addresses
         - uses 32-bit address
         - 4 octets
-        - Network Address: 0 fourth octet
-        - Broadcast Address: 255 fourth octet
          #### Private IPv4 Address Ranges
          - 10.0.0.0 - 10.255.255.255
          - 172.16.0.0 - 172.31.255.255
@@ -24,6 +22,10 @@
    - **Automatic Private IP Addressing**
    - **Ranges: ** 169.254.0.0 - 169.254.255.255
    - automatically assigns IP address to devices when DHCP fails
+### Subnet
+- **Subnetting** - segmenting/dividing a network into smaller networks
+- Network Address: first address
+- Broadcast Address: last address
 ## Ports
    - doors where data go in and out in the IP address (device)
    - ports disappear when the service stops
