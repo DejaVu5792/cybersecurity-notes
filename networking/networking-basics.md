@@ -20,12 +20,17 @@
    - automatically assign IP address to devices
    ### APIPA
    - **Automatic Private IP Addressing**
-   - **Ranges: ** 169.254.0.0 - 169.254.255.255
+   - Ranges: 169.254.0.0 - 169.254.255.255
    - automatically assigns IP address to devices when DHCP fails
-### Subnet
-- **Subnetting** - segmenting/dividing a network into smaller networks
-- Network Address: first address
-- Broadcast Address: last address
+   ### Subnet
+   - **Subnetting** - segmenting/dividing a network into smaller networks
+   - **Network Address:** first address
+   - **Broadcast Address:** last address
+   - **Third octet movement** - normally happens if the CIDR notation goes beyond /23
+   - **Usable Hosts** - IP addresses within a subnet that can be allocated for devices
+      - Formula: (2^(32-CIDR Notation))-2
+   ### CIDR
+   - **CIDR Notation** - defines the subnet ranges/blocks
 ## Ports
    - doors where data go in and out in the IP address (device)
    - ports disappear when the service stops
