@@ -27,10 +27,16 @@
    - **Network Address:** first address
    - **Broadcast Address:** last address
    - **Third octet movement** - normally happens if the CIDR notation goes beyond /23
+   - **Block Size** - the subnet's ranges, from the network to the broadcast address
    - **Usable Hosts** - IP addresses within a subnet that can be allocated for devices
       - Formula: (2^(32-CIDR Notation))-2
+   - Counters **lateral movement**, where an attacker compromises one address to another 
    ### CIDR
    - **CIDR Notation** - defines the subnet ranges/blocks
+   ### VLSM 
+   - **Variable Length Subnet Masking**
+   - a network design technique of allocationg subnets for efficiency
+   - largest to smallest block size
 ## Ports
    - doors where data go in and out in the IP address (device)
    - ports disappear when the service stops
