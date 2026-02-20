@@ -41,6 +41,15 @@
    - doors where data go in and out in the IP address (device)
    - ports disappear when the service stops
    - open port = risk, so close unused ports
+   - the device uses random high port and the server listens through a well-known port
+   - **Well-known Ports**
+      - 21 - FTP (File Transfer)
+      - 22 - SSH (Secure Remote Login)
+      - 23 - Telnet (Insecure Remote Login)
+      - 25 - SMTP
+      - 53 - DNS
+      - 80 - HTTP
+      - 443 - HTTPS 
 ## DNS
 - **Domain Name System**
 - translates human-readable domains into IP addresses so devices know where to connect on the internet
