@@ -41,7 +41,8 @@
    - doors where data go in and out in the IP address (device)
    - ports disappear when the service stops
    - open port = risk, so close unused ports
-   - the device uses random high port and the server listens through a well-known port
+   - the device uses random high (ephemeral) port and the server listens through a well-known port
+      - the ephemeral port will get released and will wait for new client when the current client stops using the service
    - **Well-known Ports**
       - 21 - FTP (File Transfer)
       - 22 - SSH (Secure Remote Login)
@@ -49,7 +50,14 @@
       - 25 - SMTP
       - 53 - DNS
       - 80 - HTTP
-      - 443 - HTTPS 
+      - 443 - HTTPS
+   - **TCP 4 tuple**
+      - client IP, client port, server IP, server port
+      - if any one changes, the connection becomes different
+   - **States:**
+      - **Open** - the service is actively listening
+      - **Closed** - No service is listening
+      - **Filtered** - the service is blocked 
 ## DNS
 - **Domain Name System**
 - translates human-readable domains into IP addresses so devices know where to connect on the internet
