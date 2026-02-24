@@ -36,5 +36,6 @@
    - **Variable Length Subnet Masking**
    - a network design technique of allocationg subnets for efficiency
    - largest to smallest block size
-[Back to Top](#IP-Address.md)
+---
+[Back to Top](#ip-address)
 
