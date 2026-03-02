@@ -40,6 +40,6 @@
    ## UDP 
    - connectionless
    - it's like data are getting fired by a machine gun
-   - good for calls, livestreams, video games, and other services that require late latencies
+   - good for calls, livestreams, video games, and other services that require low latencies
    - **Pros:** - fast
    - **Cons:** - unreliable
