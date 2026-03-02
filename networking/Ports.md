@@ -26,3 +26,20 @@
    - **Threat:**
       - open port = attack surface, so close unused ports
       - Attackers can exploit the gaps/vulnerabilities of the service you access through a port
+# Transport Layer Protocols - the ways data are transferred
+   ## TCP 
+   - resends lost packets
+   - segments of data comes with a sequence number that'll be rearranged by the receiver
+   - good for file downloads, bank transactions, and other services that needs reliability
+   - **Pros:** - reliable, ordered
+   - **Cons:** - slow
+      ### TCP Three-way Handshake 
+      1. **SYN** - sender says **hi** to receiver
+      2. **SYN-ACK** - the receiver says **let's connect** to sender
+      3. **ACK** - the sender says **sure** to receiver
+   ## UDP 
+   - connectionless
+   - it's like data are getting fired by a machine gun
+   - good for calls, livestreams, video games, and other services that require late latencies
+   - **Pros:** - fast
+   - **Cons:** - unreliable
