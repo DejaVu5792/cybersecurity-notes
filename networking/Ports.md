@@ -31,8 +31,8 @@
    - resends lost packets
    - segments of data comes with a sequence number that'll be rearranged by the receiver
    - good for file downloads, bank transactions, and other services that needs reliability
-   - **Pros:** - reliable, ordered
-   - **Cons:** - slow
+   - **Pros:** reliable, ordered
+   - **Cons:** slow
       ### TCP Three-way Handshake 
       1. **SYN** - sender says **hi** to receiver
       2. **SYN-ACK** - the receiver says **let's connect** to sender
@@ -41,5 +41,5 @@
    - connectionless
    - it's like data are getting fired by a machine gun
    - good for calls, livestreams, video games, and other services that require low latencies
-   - **Pros:** - fast
-   - **Cons:** - unreliable
+   - **Pros:** fast
+   - **Cons:** unreliable
