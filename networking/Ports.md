@@ -24,8 +24,7 @@
          - **Closed port** - send **TCP RST**
          - **Filtered port** - no response
    - **Threat:**
-      - open port = attack surface, so close unused ports
-      - Attackers can exploit the gaps/vulnerabilities of the service you access through a port
+      - open port = attack surface, so close unused ports.          - Attackers can exploit the gaps/vulnerabilities of the service you access through a port
 # Transport Layer Protocols - the ways data are transferred
    ## TCP 
    - resends lost packets
@@ -33,10 +32,19 @@
    - good for file downloads, bank transactions, and other services that needs reliability
    - **Pros:** reliable, ordered
    - **Cons:** slow
-      ### TCP Three-way Handshake 
+      ### TCP Three-way Handshake
+     - **Flags:**                         1. **SYN** - synchronize
+       2. **ACK** - acknowledge 
+       3. **FIN** - graceful close
+       4. **RST** - force close
+       - **Establish Connection**
       1. **SYN** - sender says **hi** to receiver
       2. **SYN-ACK** - the receiver says **let's connect** to sender
       3. **ACK** - the sender says **sure** to receiver
+     - **Terminate Connection**
+      1. **FIN** 
+      2. **FIN-ACK**
+      3. **ACK**
    ## UDP 
    - connectionless
    - it's like data are getting fired by a machine gun
