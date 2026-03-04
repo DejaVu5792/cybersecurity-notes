@@ -24,30 +24,35 @@
          - **Closed port** - send **TCP RST**
          - **Filtered port** - no response
    - **Threat:**
-      - open port = attack surface, so close unused ports.          - Attackers can exploit the gaps/vulnerabilities of the service you access through a port
+      - open port = attack surface, so close unused ports.
+      - Attackers can exploit the gaps/vulnerabilities of the service you access through a port
 # Transport Layer Protocols - the ways data are transferred
-   ## TCP 
+   ## TCP (Transmission Control Protocol)
    - resends lost packets
    - segments of data comes with a sequence number that'll be rearranged by the receiver
    - good for file downloads, bank transactions, and other services that needs reliability
-   - **Pros:** reliable, ordered
-   - **Cons:** slow
+   - **Pros:** reliable, ordered, assures integrity
+   - **Cons:** higher latency, higher **overhead**
+   - **Threat:** Attackers might send multiple SYN packets to a server, but never return ACK, leaving half-open connections that consumes resources and cause service disruptions.
       ### TCP Three-way Handshake
-     - **Flags:**                         1. **SYN** - synchronize
-       2. **ACK** - acknowledge 
-       3. **FIN** - graceful close
-       4. **RST** - force close
-       - **Establish Connection**
-      1. **SYN** - sender says **hi** to receiver
-      2. **SYN-ACK** - the receiver says **let's connect** to sender
-      3. **ACK** - the sender says **sure** to receiver
-     - **Terminate Connection**
-      1. **FIN** 
-      2. **FIN-ACK**
-      3. **ACK**
+      - **Flags:**
+         1. **SYN** - synchronize
+         2. **ACK** - acknowledge 
+         3. **FIN** - graceful close
+         4. **RST** - force close
+      - **Establish Connection**
+         1. **SYN** - sender says **hi** to receiver
+         2. **SYN-ACK** - the receiver says **let's connect** to sender
+         3. **ACK** - the sender says **sure** to receiver
+      - **Terminate Connection**
+         1. **FIN** 
+         2. **FIN-ACK**
+         3. **ACK**
    ## UDP 
    - connectionless
    - it's like data are getting fired by a machine gun
    - good for calls, livestreams, video games, and other services that require low latencies
+   - On video games, lost data packets are replaced with newer packets. Retrasnmission of lost packets will cause delay.
+   - **Threat:** IP Spoofing
    - **Pros:** fast
-   - **Cons:** unreliable
+   - **Cons:** unreliable, data may get lost, jumbled, or distorted
