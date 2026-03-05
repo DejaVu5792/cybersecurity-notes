@@ -25,6 +25,10 @@
    9. Authoritative returns the real IP address
    10. Browser loads the website
 
+## DNS Caching
+- temporarily stores the IP address of the visited website until the Time to Live (TTL) expires
+- for faster repeated lookup and less DNS query
+
 ## DNS Attacks
    1. DNS Spoofing - attacker injects fake IP address to DNS and drags you there
    2. DNS Amplification - attackers flood victims with DNS responses from a falsified IP address
