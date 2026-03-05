@@ -1,6 +1,7 @@
 # DNS
 - **Domain Name System**
 - translates human-readable domains into IP addresses so devices know where to connect on the internet
+- without it, we need to memorize IP addresses
 - can be taken advantage because:
    - it is trusted by default
    - rarely get deeply inspected
