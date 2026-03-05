@@ -27,7 +27,7 @@
 
 ## DNS Caching
 - temporarily stores the IP address of the visited website until the Time to Live (TTL) expires
-- for faster repeated lookup and less DNS query
+- for faster repeated lookup and less DNS query traffic
 
 ## DNS Attacks
    1. DNS Spoofing - attacker injects fake IP address to DNS and drags you there
