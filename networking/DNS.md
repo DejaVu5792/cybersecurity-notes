@@ -25,6 +25,13 @@
    9. Authoritative returns the real IP address
    10. Browser loads the website
 
+## DNS Record Types
+   1. A - records IPv4 address
+   2. AAAA - records IPv6 address
+   3. MX - mail servers
+   4. CNAME - records alias of the domain name
+   5. TXT - text file; security and verification 
+
 ## DNS Caching
 - temporarily stores the IP address of the visited website until the Time to Live (TTL) expires
 - for faster repeated lookup and less DNS query traffic
