@@ -37,11 +37,21 @@
 - for faster repeated lookup and less DNS query traffic
 
 ## DNS Attacks
-   1. DNS Spoofing - attacker injects fake IP address to DNS and drags you there
-   2. DNS Amplification - attackers flood victims with DNS responses from a falsified IP address
-   3. DNS Phishing - fake and look-a-like domain names
-   4. Domain Generation Algorithm - malware randomly generate domains
-   5. Fast Flux - one domain name that rotates around multiple IP addresses
+   1. **DNS Spoofing/Cache Poisoning**
+      1. Attacker poisons the DNS cache
+      2. Browser sends an IP address to a malicious website
+      3. Victim enters the website
+      4. Attacker performs phishing or eavesdropping
+   3. **DNS Amplification** - a type of **Distributed Denial of Service (DDoS)** Attack
+      1. Attacker sends one small request to an open DNS resolver
+      2. Spoofs the victim's IP address
+      3. Browser sends large responses
+      4. Victim gets flooded
+      5. Service disrupts
+   4. **DNS Phishing** - fake and look-a-like domain names
+   5. Domain Generation Algorithm - malware randomly generate domains
+   6. **Fast Flux** - one domain name that rotates around multiple IP addresses
+   7. **DNS Tunneling** - a hidden malware on a DNS query, bypassing firewalls and silently communicates
 
 ## Threat detection
    - long and random-looking domain names
