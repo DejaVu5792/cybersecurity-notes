@@ -8,33 +8,33 @@
    - needed to get on the internet
 
 ## DNS Servers
-   1. DNS Resolver
-   2. Root Server
-   3. TLD (Top level domain) server
-   4. Authoritative Server
+   1. **DNS Resolver**
+   2. **Root Server** - top/highest DNS server
+   3. **TLD (Top level domain) server**
+   4. **Authoritative Server**
 
 ## DNS lookup process
-   1. Browser checks local cache
-   2. Browser checks OS cache
-   3. Browser asks DNS resolver
-   4. Resolver asks Root server
+   1. Browser checks **local cache**
+   2. Browser checks **OS cache**
+   3. Browser asks **DNS resolver**
+   4. Resolver asks **Root server**
    5. Root points to TLD server
-   6. Resolver asks TLD server
+   6. Resolver asks **TLD server**
    7. TLD points to authoritative server
-   8. Resolver asks authoritative server
-   9. Authoritative returns the real IP address
-   10. Browser loads the website
+   8. Resolver asks **authoritative server**
+   9. Authoritative returns the **real I**P address
+   10. Browser **loads** the website
 
 ## DNS Record Types
-   1. A - records IPv4 address
-   2. AAAA - records IPv6 address
-   3. MX - mail servers
-   4. CNAME - records alias of the domain name
-   5. TXT - text file; security and verification 
+   1. **A** - records IPv4 address
+   2. **AAAA** - records IPv6 address
+   3. **MX** - mail servers
+   4. **CNAME** - records alias of the domain name
+   5. **TXT** - text file; security and verification 
 
 ## DNS Caching
-- temporarily stores the IP address of the visited website until the Time to Live (TTL) expires
-- for faster repeated lookup and less DNS query traffic
+- temporarily stores the IP address of the visited website until the **Time to Live (TTL)** expires
+- for **faster repeated lookup** and **less DNS query traffic**
 
 ## DNS Attacks
    1. **DNS Spoofing/Cache Poisoning**
@@ -49,7 +49,7 @@
       4. Victim gets flooded
       5. Service disrupts
    4. **DNS Phishing** - fake and look-a-like domain names
-   5. Domain Generation Algorithm - malware randomly generate domains
+   5. **Domain Generation Algorithm** - malware randomly generate domains
    6. **Fast Flux** - one domain name that rotates around multiple IP addresses
    7. **DNS Tunneling** - a hidden malware on a DNS query, bypassing firewalls and silently communicates
 
