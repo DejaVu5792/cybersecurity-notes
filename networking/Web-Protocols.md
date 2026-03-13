@@ -1,6 +1,15 @@
 # HTTP
-- Hypertext Transfer Protocol 
+- Hypertext Transfer Protocol
+- rules that define how browsers and servers request and receive data on the web
 - sends data on plain text
+- **Client-Server Architecture**
+   -  used by HTTP
+- **HTTP Process:**
+   1. User **types URL**
+   2. Browser sends **HTTP request**
+   3. Server **processes the request**
+   4. Server sends **HTTP response**
+   5. Browser **loads the website**
 - **Vulnerabilities**
    - **Man-in-the-Middle Attack** - an attacker on the same network can read and modify your data
    - **Session Hijacking** - an attacker impersonates you using your session cookies
