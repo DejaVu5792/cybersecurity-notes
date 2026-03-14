@@ -24,6 +24,19 @@
    - **Encryption** - translates data into ciphertext
 - ensures data confidentiality and integrity
 - Protocols: TLS and SSL
+- **HTTPS Process:**
+   1. User types URL on the browser
+   2. Browser performs TLS handshake with the server
+   3. Browser sends encrypted HTTP request
+   4. Server processes the request
+   5. Server returns encrypted HTTP response
+   6. Browser decrypts the data and loads the website
+- **Digital Certificate:**
+   - issued by **Certificate Authority (CA)**
+   - **Ensures:**
+      - **Encryption**
+      - **Integrity**
+      - **Authentication**
 - **Limitations:**
    - It doesn't prevent any compromises happened on the sender and receiver
    - **SSL stripping** - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
