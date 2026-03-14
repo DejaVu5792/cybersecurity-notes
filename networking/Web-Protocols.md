@@ -1,9 +1,11 @@
 # HTTP
 - Hypertext Transfer Protocol
 - rules that define how browsers and servers request and receive data on the web
-- sends data on plain text
-- **Client-Server Architecture**
-   -  used by HTTP
+- protocol that enable browsers and servers to communicate or the web
+- **Key features:**
+   - **Unencrypted** - sends data on plain text
+   - **Insecure** - anyone intercepting your network can see your data
+- uses **Client-Server Architecture**
 - **HTTP Process:**
    1. User **types URL**
    2. Browser sends **HTTP request**
