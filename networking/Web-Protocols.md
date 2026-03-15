@@ -13,7 +13,10 @@
    4. Server sends **HTTP response**
    5. Browser **loads the website**
 - **Vulnerabilities**
-   - **Man-in-the-Middle Attack** - an attacker on the same network can read and modify your data
+   - **Packet Sniffing** - attacker captures data packets/traffic and analyzes it
+   - **Man-in-the-Middle Attack**
+      - an attacker on the same network can read and modify your data
+      - attacker intercepts the communication between a client and a server
    - **Session Hijacking** - an attacker impersonates you using your session cookies
       - **Session cookies** are the information that a website collects to know you
    - **Script Injection** - modifies a website's data and adds malicious scripts
@@ -31,8 +34,11 @@
    4. Server processes the request
    5. Server returns encrypted HTTP response
    6. Browser decrypts the data and loads the website
-- **Digital Certificate:**
+- **Digital Certificate**
+   - legitimate and verified servers have this
    - issued by **Certificate Authority (CA)**
+- **Transport Layer Security (TLS)**
+   - Protocol used by HTTPS
    - **Ensures:**
       - **Encryption**
       - **Integrity**
