@@ -4,8 +4,8 @@
    -  protocol that enable browsers and servers to communicate or the web
    -  uses **Client-Server Architecture**
    ## Key features:
-      - Unencrypted - sends data on plain text
-      - Insecure - anyone intercepting your network can see your data
+      1. Unencrypted - sends data on plain text
+      2. Insecure - anyone intercepting your network can see your data
    ## HTTP Process:
       1. User types URL
       2. Browser sends HTTP request
@@ -51,7 +51,7 @@
          - generate encryption/decryption keys
       5. Secure Communication
    ## Encryption 
-   - hising the data by translating it into ciphertext
+   - hiding the data by translating it into ciphertext
    - **Types:**
       1. **Asymmetrical**
          - two keys; a public key for everyone and a private key for the server
@@ -76,9 +76,9 @@
    | 500-599 | Server Error |
    ## Limitations:
    - It doesn't prevent any compromises happened on the sender and receiver
-   - SSL stripping - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
+   - **SSL stripping** - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
       - browsers might still initially connect on a website via HTTP
-      - Prevention: HSTS - only accepts HTTPS connections, even if you manually type http
+      - Prevention: **HSTS** - only accepts HTTPS connections, even if you manually type http
    ## Opening a secure website
       1. DNS lookup - translates the domain name into an IP address
       2. TCP three-way handshake - establish reliable and ordered connection between the client and the server
