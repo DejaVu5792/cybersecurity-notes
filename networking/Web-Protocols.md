@@ -30,17 +30,35 @@
    - Hypertext Transfer Protocol **Secure**
    - HTTP on TLS
    - encrypts web data while being sent from the browser to the server
-      - **Encryption** - translates data into ciphertext
-   - ensures data confidentiality and integrity
    - **Digital Certificate**
       - legitimate and verified servers have this
       - issued by **Certificate Authority (CA)**
-   - **Transport Layer Security (TLS)**
-      -  Protocol used by HTTPS
-      - **Ensures:**
-         - **Encryption**
-         - **Integrity**
-         - **Authentication**
+   ## Transport Layer Security (TLS)
+   -  Protocol used by HTTPS
+   - **Ensures:**
+      - **Encryption**
+      - **Integrity**
+      - **Authentication**
+   - TLS Handshake Process
+      1. Client sends Client Hello
+         - valid TLS version
+      2. Server sends Server Hello
+         - digital certificate
+      3. Certificate Verification
+         - browser checks the certificate using Certificate Authority
+         - if invalid: browser will send a warning
+      4. Key Generation
+         - generate encryption/decryption keys
+      5. Secure Communication
+   ## Encryption 
+   - hising the data by translating it into ciphertext
+   - **Types:**
+      1. **Asymmetrical**
+         - two keys; a public key for everyone and a private key for the server
+         - used for TLS handshake
+      3. **Symmetrical**
+         - one key for both the client and the server
+         - fast and used for HTTPS communication
    ## HTTPS Process:
       1. User types URL on the browser
       2. Browser performs TLS handshake with the server
@@ -57,13 +75,13 @@
    | 400-499 | Client error |
    | 500-599 | Server Error |
    ## Limitations:
-      - It doesn't prevent any compromises happened on the sender and receiver
-      - SSL stripping - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
-         - browsers might still initially connect on a website via HTTP
-         - **Prevention: HSTS** - only accepts HTTPS connections, even if you manually type http
+   - It doesn't prevent any compromises happened on the sender and receiver
+   - SSL stripping - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
+      - browsers might still initially connect on a website via HTTP
+      - Prevention: HSTS - only accepts HTTPS connections, even if you manually type http
    ## Opening a secure website
       1. DNS lookup - translates the domain name into an IP address
       2. TCP three-way handshake - establish reliable and ordered connection between the client and the server
       3. TLS handshake - verify a server's identity, protect data in-transit, and build a secure tunnel
-      - check CA (Certificate Authority certificate and domain name
+         - check CA (Certificate Authority certificate and domain name
       4. HTTP request - request HTML, CSS, and JavaScript
