@@ -1,7 +1,7 @@
 # HTTP
    - Hypertext Transfer Protocol
    - rules that define how browsers and servers request and receive data on the web
-   -  protocol that enable browsers and servers to communicate or the web
+   -  protocol that enable browsers and servers to communicate on the web
    -  uses **Client-Server Architecture**
    ## Key features:
       1. Unencrypted - sends data on plain text
@@ -79,9 +79,28 @@
    - **SSL stripping** - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
       - browsers might still initially connect on a website via HTTP
       - Prevention: **HSTS** - only accepts HTTPS connections, even if you manually type http
-   ## Opening a secure website
-      1. DNS lookup - translates the domain name into an IP address
-      2. TCP three-way handshake - establish reliable and ordered connection between the client and the server
-      3. TLS handshake - verify a server's identity, protect data in-transit, and build a secure tunnel
+   ## Opening website process
+      1. User enters the URL
+      2. Browser cache check: load the website if found
+      3. DNS cache check: jump to TCP handshake if found
+      4. DNS lookup - translates the domain name into an IP address
+      5. TCP three-way handshake - establish reliable and ordered connection between the client and the server
+      6. If on HTTPS:
+         TLS handshake
+         - verify a server's identity, protect data in-transit, and build a secure tunnel
          - check CA (Certificate Authority certificate and domain name
-      4. HTTP request - request HTML, CSS, and JavaScript
+      7. Browser sends HTTP request via GET method
+      8. Server processes the request
+      9. Browser sends HTTP response - sends HTML, CSS, and JavaScript
+      10. Browser loads the resources, parses the code, and then renders the website
+   Key terms:
+   1. Uniform Resource Locator - address for locating web resources
+      - Components:
+         - Ex: https://github.com/Yotsuhadesu/cybersecurity-notes
+         - Protocol: https://
+         - Domain: github.com
+         - Path: /Yotsuhadesu/cybersecurity-notes
+   2. DNS - system that translates domain names into IP addresses
+   3. IP address - unique nuemric identifier for a device or software connected on a network
+   4. Client - device or software (e.g. browser); sends request
+   5. Server - a system the processes the request and sends response
