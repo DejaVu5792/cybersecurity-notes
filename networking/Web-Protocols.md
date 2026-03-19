@@ -104,3 +104,4 @@
    3. IP address - unique nuemric identifier for a device or software connected on a network
    4. Client - device or software (e.g. browser); sends request
    5. Server - a system the processes the request and sends response
+   6. HTTP(S) - protocol for requesting web resources
