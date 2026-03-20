@@ -42,14 +42,16 @@
    - TLS Handshake Process
       1. Client sends Client Hello
          - valid TLS version
+         - sends supported encryption methods
       2. Server sends Server Hello
          - digital certificate
+         - chooses encryption method
       3. Certificate Verification
-         - browser checks the certificate using Certificate Authority
+         - browser verifies certificate via Certificate Authority (CA)
          - if invalid: browser will send a warning
-      4. Key Generation
-         - generate encryption/decryption keys
-      5. Secure Communication
+      4. Key Exchange
+         - encryption/decryption keys generation and agreement
+      5. Secure Communication Begins
    ## Encryption 
    - hiding the data by translating it into ciphertext
    - **Types:**
