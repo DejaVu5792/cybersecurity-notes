@@ -40,18 +40,18 @@
       - **Integrity**
       - **Authentication**
    - TLS Handshake Process
-      1. Client sends Client Hello
+      1. Client sends **Client Hello**
          - valid TLS version
          - sends supported encryption methods
-      2. Server sends Server Hello
+      2. Server sends **Server Hello**
          - digital certificate
          - chooses encryption method
-      3. Certificate Verification
+      3. **Certificate Verification**
          - browser verifies certificate via Certificate Authority (CA)
          - if invalid: browser will send a warning
-      4. Key Exchange
+      4. **Key Exchange**
          - encryption/decryption keys generation and agreement
-      5. Secure Communication Begins
+      5. **Secure Communication** Begins
    ## Encryption 
    - hiding the data by translating it into ciphertext
    - **Types:**
@@ -78,7 +78,8 @@
    | 500-599 | Server Error |
    ## Limitations:
    - It doesn't prevent any compromises happened on the sender and receiver
-   - **SSL stripping** - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
+   - **SSL stripping**
+      - an attacker on the same network forces a browser to downgrade a connection from HTTPS to HTTP
       - browsers might still initially connect on a website via HTTP
       - Prevention: **HSTS** - only accepts HTTPS connections, even if you manually type http
    ## Opening website process
@@ -87,8 +88,7 @@
       3. DNS cache check: jump to TCP handshake if found
       4. DNS lookup - translates the domain name into an IP address
       5. TCP three-way handshake - establish reliable and ordered connection between the client and the server
-      6. If on HTTPS:
-         TLS handshake
+      6. TLS handshake (HTTPS only)
          - verify a server's identity, protect data in-transit, and build a secure tunnel
          - check CA (Certificate Authority certificate and domain name
       7. Browser sends HTTP request via GET method
@@ -96,14 +96,18 @@
       9. Browser sends HTTP response - sends HTML, CSS, and JavaScript
       10. Browser loads the resources, parses the code, and then renders the website
    Key terms:
-   1. Uniform Resource Locator - address for locating web resources
-      - Components:
-         - Ex: https://github.com/Yotsuhadesu/cybersecurity-notes
-         - Protocol: https://
-         - Domain: github.com
-         - Path: /Yotsuhadesu/cybersecurity-notes
-   2. DNS - system that translates domain names into IP addresses
-   3. IP address - unique nuemric identifier for a device or software connected on a network
-   4. Client - device or software (e.g. browser); sends request
-   5. Server - a system the processes the request and sends response
-   6. HTTP(S) - protocol for requesting web resources
+      1. Uniform Resource Locator - address for locating web resources
+         - Components:
+            - Ex: https://github.com/Yotsuhadesu/cybersecurity-notes
+            - Protocol: https://
+            - Domain: github.com
+            - Path: /Yotsuhadesu/cybersecurity-notes
+      2. DNS - system that translates domain names into IP addresses
+      3. IP address - unique nuemric identifier for a device or software connected on a network
+      4. Client - device or software (e.g. browser); sends request
+      5. Server - a system the processes the request and sends response
+      6. HTTP(S) - protocol for requesting web resources
+   Failure Scenarios:
+      1. DNS lookup - domain not found (NXDOMAIN)
+      2. TCP three-way handshake - no connection established with the server
+      3. TLS Handshake - insecure connection
