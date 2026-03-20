@@ -41,9 +41,9 @@
          3. **FIN** - graceful close
          4. **RST** - force close
       - **Establish Connection**
-         1. **SYN** - sender says **hi** to receiver
-         2. **SYN-ACK** - the receiver says **let's connect** to sender
-         3. **ACK** - the sender says **sure** to receiver
+         1. **SYN** - client initiates connection
+         2. **SYN-ACK** - the server is open for connection
+         3. **ACK** - reliable and ordered connection established
       - **Terminate Connection**
          1. **FIN** 
          2. **FIN-ACK**
