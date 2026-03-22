@@ -104,10 +104,19 @@
             - Path: /Yotsuhadesu/cybersecurity-notes
       2. DNS - system that translates domain names into IP addresses
       3. IP address - unique nuemric identifier for a device or software connected on a network
-      4. Client - device or software (e.g. browser); sends request
-      5. Server - a system the processes the request and sends response
-      6. HTTP(S) - protocol for requesting web resources
+      4. Client - device or software (e.g. browser) that sends request
+      5. Server - a system that processes the request and sends response
+      6. HTTP(S) - protocol for transferring web resources
    Failure Scenarios:
       1. DNS lookup - domain not found (NXDOMAIN)
       2. TCP three-way handshake - no connection established with the server
       3. TLS Handshake - insecure connection
+# Packet
+   - a small unit of data transferred over a network
+   - Components:
+      1. Header
+         - contains the packet's metadata
+         - Source/Destination IP, Protocol, Port number
+      2.Payload - actual data
+   - on HTTP, everything inside a packet is in plain text
+   - on HTTPS, some metadata, such as port and source/destination IP, are revealed and everything else is encrypted
