@@ -13,9 +13,9 @@
 - whoami - show the current user's account
 - cd - move across directories/folders
 - grep - find a specified word
-  - grep [flags] "[word]" [location]
+  - grep [flags] "[keyword]" [file...]
 - find - locate a file
-  - find [location] [flags] [filename]
+  - find [path] [flags] [filename]
 - `>` - overwrite a file's content or create one if the file is non-existent
 - `>>` - add something to a file
 - & - run a command in the background
