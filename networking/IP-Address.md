@@ -34,7 +34,7 @@
    - **CIDR Notation** - defines the subnet ranges/blocks
    ## VLSM 
    - **Variable Length Subnet Masking**
-   - a network design technique of allocationg subnets for efficiency
+   - a network design technique of allocating subnets for efficiency
    - largest to smallest block size
 ---
 [Back to Top](#ip-address)
