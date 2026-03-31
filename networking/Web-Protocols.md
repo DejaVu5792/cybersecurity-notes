@@ -121,5 +121,5 @@
          - contains the packet's metadata
          - Source/Destination IP, Protocol, Port number
       2.Payload - actual data
-   - on HTTP, everything inside a packet is in plain text
-   - on HTTPS, some metadata, such as port and source/destination IP, are revealed and everything else is encrypted
+         - on HTTP, everything inside a packet is in plain text
+         - on HTTPS, some metadata, such as port and source/destination IP, are revealed and everything else is encrypted
