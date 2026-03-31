@@ -72,7 +72,7 @@
    ## HTTPS Status Codes
    | Ranges | Meaning |
    | --- | --- |
-   | 100-199 | Informationality |
+   | 100-199 | Informational |
    | 200-299 | Success |
    | 300-399 | Redirection |
    | 400-499 | Client error |
