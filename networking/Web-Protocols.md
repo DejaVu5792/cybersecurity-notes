@@ -17,10 +17,11 @@
       2. Man-in-the-Middle Attack
          - an attacker on the same network can read and modify your data
          - attacker intercepts the communication between a client and a server
-      3. Session Hijacking - an attacker impersonates you using your session cookies
-      4. Session cookies are the information that a website collects to know you
-      5. Script Injection - modifies a website's data and adds malicious scripts
-      6. Data Tampering - modification of data
+      3. Session Hijacking 
+         - an attacker impersonates you using your session cookies
+         - Session cookie - information that a website collects to know you
+      4. Script Injection - modifies a website's data and adds malicious scripts
+      5. Data Tampering - modification of data
    ## HTTP Methods
       1. GET - request resources from the server
       2. POST - send data to the server
