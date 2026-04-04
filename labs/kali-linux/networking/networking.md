@@ -37,7 +37,7 @@ Command: nmap 127.0.0.1
 Result:
 - All 1000 scanned ports on localhost are closed.
 
-![ping result](screenshots/kali-scan.png)
+![scan localhost result](screenshots/kali-scan.png)
 
 ---
 
