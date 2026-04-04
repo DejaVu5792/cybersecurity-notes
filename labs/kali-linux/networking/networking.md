@@ -17,6 +17,8 @@ Result:
 - Local IP: 10.0.2.25
 - Loopback Address: 127.0.0.1
 
+![ping a result](screenshots/kali-ip-address.png)
+
 ---
 
 ## 2. Check Connectivity
@@ -26,6 +28,7 @@ Result:
 - 0% packet loss
 - ~50 ms latency
 
+![ping result](screenshots/kali-scan.png)
 ---
 
 ## 3. Lochalhost Port Scan
@@ -33,6 +36,8 @@ Command: nmap 127.0.0.1
 
 Result:
 - All 1000 scanned ports on localhost are closed.
+
+![ping result](screenshots/kali-scan.png)
 
 ---
 
