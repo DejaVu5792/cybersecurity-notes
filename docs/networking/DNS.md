@@ -1,3 +1,7 @@
+---
+title: Domain Name System
+---
+
 # DNS
 - **Domain Name System**
 - translates human-readable domains into IP addresses so devices know where to connect on the internet

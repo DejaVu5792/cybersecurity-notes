@@ -1,3 +1,7 @@
+---
+title: Ports
+---
+
 # Ports
    - doors where data go in and out in the IP address (device)
    - ports disappear when the service stops

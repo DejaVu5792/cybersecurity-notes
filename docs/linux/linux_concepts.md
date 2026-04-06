@@ -1,3 +1,6 @@
+---
+title: Linux Concepts
+---
 ## Paths
 - **Absolute**
   - Example: cd /home/username/file

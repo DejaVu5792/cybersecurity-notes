@@ -1,3 +1,7 @@
+---
+title: Completed Rooms
+---
+
 # Completed Rooms
 ## Linux Fundamentals Part 1
 - Linux is a lightweight operating system
