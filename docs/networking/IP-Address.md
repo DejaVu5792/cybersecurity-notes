@@ -1,3 +1,7 @@
+---
+title: IP Address
+---
+
 # IP Address
    - **Internet Protocol** Address
    - A changing identifier of a device assigned by a network it is connected on

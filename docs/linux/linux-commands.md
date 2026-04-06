@@ -1,3 +1,7 @@
+---
+title: Linux Commands
+---
+
 # Linux Basics
 
 ## Commands I've Learned

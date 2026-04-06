@@ -1,3 +1,7 @@
+---
+title: File Navigation, Manipulation, & Mode Change
+---
+
 # Kali Linux - File Navigation, Manipulation, & Mode Change
 
 ## Objective
@@ -24,4 +28,5 @@ Perform core file system operations using the terminal.
 Successfully performed the operations without looking at my notes.
 
 ## Proof
-See screenshots in the screenshots folder
+![](./screenshots/kali-file-manipulation.png)
+![](./screenshots/kali-mode-change.png)

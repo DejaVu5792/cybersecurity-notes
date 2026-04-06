@@ -1,3 +1,7 @@
+---
+title: Networking
+---
+
 # Kali Linux - Networking Basics
 
 ## Objective
