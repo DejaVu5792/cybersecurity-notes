@@ -17,7 +17,7 @@ Result:
 - Local IP: 10.0.2.25
 - Loopback Address: 127.0.0.1
 
-![ping a result](screenshots/kali-ip-address.png)
+![ip a result](screenshots/kali-ip-address.png)
 
 ---
 
