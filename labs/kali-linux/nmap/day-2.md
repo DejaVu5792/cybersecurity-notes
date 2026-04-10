@@ -23,7 +23,8 @@ Result:
 
 ![ping scan](Screenshots/day-2/nmap-ping-scan.png)
 
-- The IP Addresses on my network.
+Observations:
+- I can see the IP Addresses on my network.
 
 ---
 
