@@ -1,4 +1,4 @@
-# NMAP - IP Addresses on a Network Identification
+# NMAP - IP Addresses on a Network
 
 ## Operating System
 Kali Linux
