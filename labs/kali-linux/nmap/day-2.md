@@ -25,6 +25,7 @@ Result:
 
 Observations:
 - I can see the IP Addresses on my network.
+- Scanned the network for 12.04 seconds.
 
 ---
 
