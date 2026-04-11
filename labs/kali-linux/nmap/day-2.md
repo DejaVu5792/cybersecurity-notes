@@ -124,5 +124,5 @@ Observations:
 
 Key Learnings:
 - I can identify active services an IP on my network is using; for example, the router is using a DNS resolver on port 53.
-- I learned that changes its scanning method based on whether i use root power.
+- I learned that nmap changes its scanning method based on whether i use root power.
 - The results are almost the same with the scan methods but they differ on time spent waiting on results.
