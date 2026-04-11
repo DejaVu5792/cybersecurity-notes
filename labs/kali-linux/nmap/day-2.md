@@ -123,6 +123,6 @@ Observations:
 --- 
 
 Key Learnings:
-- I can see what services an IP on my network is using
-- The router uses DNS, which defaults to port 53
-- Almost only the speed is different, same results 
+- I can identify active services an IP on my network is using; for example, the router is using a DNS resolver on port 53.
+- I learned that changes its scanning method based on whether i use root power.
+- The results are almost the same with the scan methods but they differ on time spent waiting on results.
