@@ -17,7 +17,8 @@ Scan an IP Address on my network.
 ---
 
 ## 1. Scan the Network
-Command: nmap -sn
+Command: 
+nmap -sn
 
 Result: 
 
@@ -43,7 +44,14 @@ Observations:
 ---
 
 ## 3. Baseline Scan
-Command: nmap
+Command: 
+nmap
+- works the same as nmap -sT
+- sudo nmap works like nmap -sS 
+
+Expectations: 
+- will be slow
+- show port 53 since it's the router
 
 Result:
 
@@ -51,25 +59,39 @@ Result:
 
 Observations:
 - Port 53 open, the default port for DNS
-- Scan speed: 2.68 seconds
+- Scan duration: 2.68 seconds
 
 ---
 
 ## 4. Stealth Scan
-Command: nmap -sS
+Command: 
+nmap -sS
+- also known as **stealth scan**
+- doesn't complete the TCP handshake
+- isn't recorded in the target's application logs
+
+Expectations:
+- same results but faster than baseline nmap
 
 Result: 
 
 ![stealth scan result](Screenshots/day-2/nmap-router-half-scan.png)
 
 Observations:
-- Scan Speed: 1.74 seconds
+- Scan duration: 1.74 seconds
 - Almost a second faster than baseline scan
 
 ---
 
 ## 5. Full Scan
-Command: nmap -sT
+Command: 
+nmap -sT
+- completes the TCP handshake for every target
+- more likely to be recorded in the target's application logs
+
+Expectations:
+- will be slower than stealth scan but the same speed as the baseline nmap
+- will be much more detailed
 
 Result:
 
@@ -77,20 +99,25 @@ Result:
 
 Observations:
 - conn-refused instead of reset is shown
-- Scan Speed: 2.60 seconds
+- Scan duration: 2.60 seconds
 - Same speed as the baseline scan
 
 ---
 
 ## 6. Fast Scan
-Command: nmap -T4
+Command: 
+nmap -T4
+- -T3 is the speed of the baseline nmap
+
+Expectations:
+- will be much faster than stealth scan
 
 Result: 
 
 ![fast scan result](Screenshots/day-2/nmap-router-fast-scan.png)
 
 Observations:
-- Scan Speed: 1.09 seconds
+- Scan duration: 1.09 seconds
 - Faster than all of the previous scans
 
 --- 
@@ -98,3 +125,4 @@ Observations:
 Key Learnings:
 - I can see what services an IP on my network is using
 - The router uses DNS, which defaults to port 53
+- Almost only the speed is different, same results 
