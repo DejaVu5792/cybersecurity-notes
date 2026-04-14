@@ -53,6 +53,6 @@ Observations:
 
 ## Key Learnings
 - **Bridged Adapter** connects the virtual machine to the network directly, giving it its own IP address.
-- The host machine, my laptop, has a different IP address with the virtual machine.
+- The host machine, my laptop, has a different IP address from the virtual machine.
 - The command nmap -sn doesn't perform port scans, which made it useful for quick network mapping.
 - Use ip route command for identifying the default gateway.
