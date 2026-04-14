@@ -61,7 +61,7 @@ Process:
 1. Starting from No. 17, my vm have sent SYN flag to my router
 2. Router sends SYN-ACK, signalling that it is open
 3. Vm sends ACK, completing the TCP handshake
-4. Vm terminates the connection
+4. Vm terminates the connection by sending RST-ACK
 
 ---
 
@@ -91,7 +91,7 @@ Observations:
 - Router's device: phone
   - Correct, I used my phone as a hotspot
 - OS details: Android 12 (Linux 5.4)
-  - I didn't expect that samsung is Linux based   
+  - I didn't expect that Samsung, or Android, is Linux based   
 
 ---
 
@@ -123,6 +123,4 @@ Wireshark Analysis:
 Process:
 1. Starting from No. 9, my vm sends SYN to the router
 2. Router sends SYN-ACK, signalling that it is open for connection
-3. Vm terminates the handshake without sending ACK
-
----
+3. Vm terminates the handshake by sending RST (abrupt connection termination)
