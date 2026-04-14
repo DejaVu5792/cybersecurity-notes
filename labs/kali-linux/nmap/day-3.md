@@ -94,7 +94,7 @@ Observations:
 - Router's device: phone
   - Correct, I used my phone as a hotspot
 - OS details: Android 12 (Linux 5.4)
-  - I didn't expect that Samsung, or Android, is Linux based   
+  - I didn't expect that Samsung, or Android specifically, to be Linux-based   
 
 ---
 
@@ -124,6 +124,6 @@ Wireshark Analysis:
 ![stealth scan log](Screenshots/day-3/wireshark-router-stealth-scan.png)
 
 Process:
-1. Starting from No. 9, my vm sends SYN to the router
+1. Starting from No. 9, my VM sends SYN to the router
 2. Router sends SYN-ACK, signalling that it is open for connection
-3. Vm terminates the handshake by sending RST (abrupt connection termination)
+3. VM terminates the handshake by sending RST (abrupt connection termination)
