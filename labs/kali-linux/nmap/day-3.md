@@ -1,5 +1,8 @@
 # NMAP - Further Exploration
 
+## Operating System
+Kali Linux
+
 ## Objective
 Understand, perform, and analyze different nmap scans.
 
@@ -58,10 +61,10 @@ Wireshark Analysis:
 ![full scan log](Screenshots/day-3/wireshark-router-full-scan.png)
 
 Process:
-1. Starting from No. 17, my vm have sent SYN flag to my router
+1. Starting from No. 17, my VM sent SYN flag to my router
 2. Router sends SYN-ACK, signalling that it is open
-3. Vm sends ACK, completing the TCP handshake
-4. Vm terminates the connection by sending RST-ACK
+3. VM sends ACK, completing the TCP handshake
+4. VM terminates the connection by sending RST-ACK
 
 ---
 
@@ -103,7 +106,7 @@ Command: sudo nmap --script vuln 10.169.13.251
 Result:
 ![vulnerability scan](Screenshots/day-3/nmap-router-find-vulnerability.png)
 
-- My phone has no vulnerabilities
+- The script didn't find any vulnerabilities on my phone
 
 ---
 
